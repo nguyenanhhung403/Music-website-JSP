@@ -1,0 +1,86 @@
+/* 
+    Created on : Oct 28, 2024, 4:31:14 PM
+    Author     : nguye
+*/
+
+/* Sidebar Container */
+.sidebar-container {
+    background-color: #212121;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    overflow-y: auto;
+}
+
+/* Logo and Title */
+.sidebar-logo {
+    background-color: #404040;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-logo img {
+    height: 80px;
+    width: auto;
+}
+
+.sidebar-title {
+    color: #07A1C7;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/* Navigation Links */
+.sidebar-nav ul {
+    padding-top: 30px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #EFEEE0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.sidebar-nav ul li a:hover {
+    color: #07A1C7;
+}
+
+.sidebar-nav ul li i {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #07A1C7;
+}
+
+/* Active Link */
+.sidebar-nav ul li a.active {
+    color: #07A1C7;
+}
+
+/* Hover Effect */
+.sidebar-nav ul li a:hover {
+    transform: scale(1.05);
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+/* Transition for smooth hover */
+.sidebar-nav ul li a {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}

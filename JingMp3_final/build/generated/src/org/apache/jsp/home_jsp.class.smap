@@ -1,0 +1,29 @@
+SMAP
+home_jsp.java
+JSP
+*S JSP
+*F
++ 0 home.jsp
+home.jsp
++ 1 sider.jsp
+partials/sider.jsp
++ 2 search.jsp
+partials/search.jsp
+*L
+5,15:54
+20,2:70
+21,5:72
+5#1,15:77
+20,2:93
+21,36:95
+57:131,3
+58,16:134
+74:150,3
+75,16:153
+91:169,3
+92,5:172
+25#0,4:177
+5#2,2:181
+11,28:183
+28#0,160:211
+*E

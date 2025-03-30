@@ -1,0 +1,20 @@
+/* 
+    Created on : Oct 27, 2024, 2:28:09 PM
+    Author     : nguye
+*/
+
+.custom-audio-player {
+    width: 250px; /* Adjust width as needed */
+}
+
+@media (min-width: 768px) {
+    .custom-audio-player {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .custom-audio-player {
+        width: 350px;
+    }
+}

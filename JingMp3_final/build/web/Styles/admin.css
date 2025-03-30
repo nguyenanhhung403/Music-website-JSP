@@ -1,0 +1,550 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(to right, #0073e6, #005bb5);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+header nav ul li {
+    margin: 0 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #cce0ff;
+}
+
+/* Main admin content styling */
+.admin-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.admin-content {
+    background-color: #fff;
+    padding: 2.5rem;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.admin-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #005bb5;
+}
+
+.admin-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.admin-content ul li {
+    margin-bottom: 1.2rem;
+}
+
+/* Button styling */
+button, .dropdown-toggle, .manage-link {
+    color: #fff;
+    background-color: #0073e6;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover, .dropdown-toggle:hover, .manage-link:hover {
+    background-color: #005bb5;
+    box-shadow: 0px 4px 10px rgba(0, 115, 230, 0.3);
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    font-weight: bold;
+    color: #fff;
+    background-color: #0073e6;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 180px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f7f7f7;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Link styling */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.admin-content ul li {
+    margin-bottom: 1.5rem; /* Increased margin for more space */
+}
+/* General Table Styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-table td {
+    color: #333;
+}
+
+/* User Action Buttons */
+.user-actions {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.manage-link {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.manage-link:hover {
+    background-color: #005bb5;
+}
+
+/* Action Links (Edit/Delete) */
+.edit-link, .delete-link {
+    color: #0073e6;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-link:hover {
+    background-color: #e7f0ff;
+}
+
+.delete-link {
+    color: #d9534f;
+}
+
+.delete-link:hover {
+    background-color: #fdecea;
+}
+/* Error message styling */
+.error-message {
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.3);
+}
+/* Table styling for song management */
+.song-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.song-table th, .song-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.song-table th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.song-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.song-table td {
+    color: #333;
+}
+
+/* Form styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Action links (edit/delete) */
+.edit-link, .delete-link {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-link {
+    color: #0073e6;
+}
+
+.edit-link:hover {
+    background-color: #e7f0ff;
+}
+
+.delete-link {
+    color: #d9534f;
+}
+
+.delete-link:hover {
+    background-color: #fdecea;
+}
+/* Table styling for artist management */
+.artist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.artist-table th, .artist-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.artist-table th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.artist-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.artist-table td {
+    color: #333;
+    word-wrap: break-word;
+}
+
+/* Form styling */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #005bb5;
+    box-shadow: 0px 4px 8px rgba(0, 115, 230, 0.3);
+}
+
+/* Action links (edit/delete) */
+.edit-link, .delete-link {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-link {
+    color: #0073e6;
+}
+
+.edit-link:hover {
+    background-color: #e7f0ff;
+}
+
+.delete-link {
+    color: #d9534f;
+}
+
+.delete-link:hover {
+    background-color: #fdecea;
+}.flex {
+
+}
